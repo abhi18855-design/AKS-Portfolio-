@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://abhi18855-design.github.io/Abhishek-Soni-Portfolio/sitemap.xml
