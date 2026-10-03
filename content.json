@@ -3,9 +3,9 @@
   "siteConfig": {
     "name": "Abhishek Soni",
     "title": "AI Creative Producer",
-    "email": "",
+    "email": "abhi18855@gmail.com",
     "instagram": "",
-    "linkedin": "",
+    "linkedin": "https://www.linkedin.com/in/abhishek-soni-3b58ab186/?isSelfProfile=true",
     "youtube": "",
     "description": "AI advertising, films and visual experiences. Abhishek Soni brings cinema, generative AI and creative direction together.",
     "seo": {
@@ -18,10 +18,10 @@
     "heroDescription": "AI advertisements.\nFilms. Visual experiences.",
     "heroNote": "Human imagination.\nArtificial intelligence.\nExtraordinary possibilities.",
     "contactHeading": "Have a story\nto build?",
-    "phone": "",
+    "phone": "7999198545",
     "twitter": "",
     "contactDescription": "For projects, collaborations, freelance work and professional opportunities.",
-    "contactCta": "Start a project",
+    "contactCta": "Let's Work Together ",
     "otherSocials": []
   },
   "profile": {
@@ -132,9 +132,9 @@
         "Generative image",
         "Art direction"
       ],
-      "thumbnail": "images/projects/tissot-time-refined/thumbnail.webp",
-      "thumbnailSmall": "images/projects/tissot-time-refined/thumbnail-small.webp",
-      "hero": "images/projects/tissot-time-refined/thumbnail.webp",
+      "thumbnail": "media/projects/01/9596bb63-064f-4bba-a101-c05824039e93.png",
+      "thumbnailSmall": "",
+      "hero": "",
       "tags": [
         "Product",
         "Luxury",
@@ -159,18 +159,19 @@
       ],
       "mediaFolder": "tissot-time-refined",
       "published": true,
-      "mediaMode": "upload",
-      "platform": "",
+      "mediaMode": "external",
+      "platform": "YouTube",
       "media": "",
       "mediaType": "image",
-      "mediaFit": "cover"
+      "mediaFit": "cover",
+      "projectUrl": "https://youtube.com/shorts/AuKIyApArcA?feature=share"
     },
     {
       "id": "02",
       "title": "PREET",
-      "subtitle": "Heritage in motion",
-      "slug": "preet-heritage-in-motion",
-      "category": "AI FASHION FILM",
+      "subtitle": "Culture Worn Forward",
+      "slug": "preet-culture-worn-forward",
+      "category": "AI BRAND AD",
       "year": 2026,
       "description": "A fictional fashion concept where traditional textiles meet cinematic space. An exploration of movement, memory and the warmth of heritage.",
       "role": "Concept direction · Visual exploration",
@@ -178,12 +179,12 @@
         "Generative image",
         "Visual storytelling"
       ],
-      "thumbnail": "images/projects/preet-heritage-in-motion/thumbnail.webp",
-      "thumbnailSmall": "images/projects/preet-heritage-in-motion/thumbnail-small.webp",
+      "thumbnail": "media/projects/02/d39bdfd0-9b81-41a7-bc14-c4ad8eb6f281.png",
+      "thumbnailSmall": "",
       "tags": [
         "Fashion",
-        "Heritage",
-        "Concept"
+        "Brand",
+        "Advertisment"
       ],
       "featured": true,
       "demo": true,
@@ -204,11 +205,13 @@
       ],
       "mediaFolder": "preet-heritage-in-motion",
       "published": true,
-      "mediaMode": "upload",
-      "platform": "",
+      "mediaMode": "external",
+      "platform": "YouTube",
       "media": "",
       "mediaType": "image",
-      "mediaFit": "cover"
+      "mediaFit": "contain",
+      "projectUrl": "https://youtube.com/shorts/8ph1nkdmS34?feature=share",
+      "hero": ""
     }
   ],
   "navigation": [
