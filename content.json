@@ -245,7 +245,41 @@
       "projectUrl": "https://youtube.com/shorts/Csk9xfCI3i4?feature=share",
       "platform": "YouTube",
       "thumbnailSmall": "",
-      "hero": ""
+      "hero": "",
+      "gallery": [
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/13e78c24-b535-469d-a88c-c547b2ac1917.png",
+          "alt": "Hanuman in Kishkindha"
+        },
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/9abf2c82-142a-4e6b-84ee-a060a21745ae.png",
+          "alt": "Ram in Panchvati"
+        },
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/aaae40b5-2fab-4bc3-8509-238cf5c09438.png",
+          "alt": "Surpankaha disguise form"
+        },
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/cf3f8e7a-9952-4458-bfeb-748d4b6558f1.png",
+          "alt": "Sita Abduction Scene"
+        },
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/358a234f-b990-48a8-8bb6-192e2bd33e0d.png",
+          "alt": "Hanuman Opens his chest"
+        },
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/61200837-316a-44c9-9edb-351cb198bc78.png",
+          "alt": "Hanuman recalls his powers (Pixar version)"
+        },
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/0ff3789d-7a36-42ea-b57c-5713718dd8bb.png",
+          "alt": "Ravan in Lanka Court"
+        },
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/6afff8e5-2cfa-4825-9221-c0498110293c.png",
+          "alt": "Surpanakha Demon form"
+        }
+      ]
     }
   ],
   "navigation": [
