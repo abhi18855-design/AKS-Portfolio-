@@ -120,6 +120,74 @@
   ],
   "projects": [
     {
+      "id": "b6c520f6-b319-4672-b383-4fc94968f222",
+      "slug": "project-b6c520f6",
+      "mediaFolder": "b6c520f6-b319-4672-b383-4fc94968f222",
+      "title": "RRRR (India Today Group)",
+      "subtitle": "Raghupati Raghav Raja Ram",
+      "description": "A pilot AI micro-drama project for the India Today Group, reimagining the epic Ramayan through AI-powered filmmaking. The project explores generative AI for cinematic storytelling, character creation, and visual world-building, bringing mythology to life through an innovative digital format.",
+      "category": "AI Micro-Drama",
+      "year": 2026,
+      "tools": [
+        "GPT Image 2",
+        "Adobe Firefly",
+        "Wan 3.0 Omni",
+        "Higgsfield",
+        "ElevenLabs",
+        "Adobe Premiere Pro",
+        "Adobe Photoshop"
+      ],
+      "tags": [],
+      "thumbnail": "https://i.ytimg.com/vi/H9IOeVVxx-4/hqdefault.jpg",
+      "featured": true,
+      "demo": false,
+      "published": true,
+      "order": 1,
+      "process": [],
+      "mediaMode": "external",
+      "mediaType": "image",
+      "mediaFit": "cover",
+      "role": "AI Creative Producer",
+      "projectUrl": "https://youtube.com/shorts/H9IOeVVxx-4?si=F0BUEWrCfhE3TTlT",
+      "platform": "YouTube",
+      "thumbnailSmall": "",
+      "hero": "",
+      "gallery": [
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/13e78c24-b535-469d-a88c-c547b2ac1917.png",
+          "alt": "Hanuman in Kishkindha"
+        },
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/9abf2c82-142a-4e6b-84ee-a060a21745ae.png",
+          "alt": "Ram in Panchvati"
+        },
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/aaae40b5-2fab-4bc3-8509-238cf5c09438.png",
+          "alt": "Surpankaha disguise form"
+        },
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/cf3f8e7a-9952-4458-bfeb-748d4b6558f1.png",
+          "alt": "Sita Abduction Scene"
+        },
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/358a234f-b990-48a8-8bb6-192e2bd33e0d.png",
+          "alt": "Hanuman Opens his chest"
+        },
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/61200837-316a-44c9-9edb-351cb198bc78.png",
+          "alt": "Hanuman recalls his powers (Pixar version)"
+        },
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/0ff3789d-7a36-42ea-b57c-5713718dd8bb.png",
+          "alt": "Ravan in Lanka Court"
+        },
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/6afff8e5-2cfa-4825-9221-c0498110293c.png",
+          "alt": "Surpanakha Demon form"
+        }
+      ]
+    },
+    {
       "id": "01",
       "title": "TISSOT",
       "subtitle": "Time, refined",
@@ -142,7 +210,7 @@
       ],
       "featured": true,
       "demo": true,
-      "order": 1,
+      "order": 2,
       "process": [
         {
           "title": "The intention",
@@ -188,7 +256,7 @@
       ],
       "featured": true,
       "demo": true,
-      "order": 2,
+      "order": 3,
       "process": [
         {
           "title": "The intention",
@@ -212,74 +280,6 @@
       "mediaFit": "contain",
       "projectUrl": "https://youtube.com/shorts/8ph1nkdmS34?feature=share",
       "hero": ""
-    },
-    {
-      "id": "b6c520f6-b319-4672-b383-4fc94968f222",
-      "slug": "project-b6c520f6",
-      "mediaFolder": "b6c520f6-b319-4672-b383-4fc94968f222",
-      "title": "RRRR (India Today Group)",
-      "subtitle": "Raghupati Raghav Raja Ram",
-      "description": "A pilot AI micro-drama project for the India Today Group, reimagining the epic Ramayan through AI-powered filmmaking. The project explores generative AI for cinematic storytelling, character creation, and visual world-building, bringing mythology to life through an innovative digital format.",
-      "category": "AI Micro-Drama",
-      "year": 2026,
-      "tools": [
-        "GPT Image 2",
-        "Adobe Firefly",
-        "Wan 3.0 Omni",
-        "Higgsfield",
-        "ElevenLabs",
-        "Adobe Premiere Pro",
-        "Adobe Photoshop"
-      ],
-      "tags": [],
-      "thumbnail": "https://i.ytimg.com/vi/Csk9xfCI3i4/hqdefault.jpg",
-      "featured": true,
-      "demo": false,
-      "published": true,
-      "order": 3,
-      "process": [],
-      "mediaMode": "external",
-      "mediaType": "image",
-      "mediaFit": "cover",
-      "role": "AI Creative Producer",
-      "projectUrl": "https://youtube.com/shorts/Csk9xfCI3i4?feature=share",
-      "platform": "YouTube",
-      "thumbnailSmall": "",
-      "hero": "",
-      "gallery": [
-        {
-          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/13e78c24-b535-469d-a88c-c547b2ac1917.png",
-          "alt": "Hanuman in Kishkindha"
-        },
-        {
-          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/9abf2c82-142a-4e6b-84ee-a060a21745ae.png",
-          "alt": "Ram in Panchvati"
-        },
-        {
-          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/aaae40b5-2fab-4bc3-8509-238cf5c09438.png",
-          "alt": "Surpankaha disguise form"
-        },
-        {
-          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/cf3f8e7a-9952-4458-bfeb-748d4b6558f1.png",
-          "alt": "Sita Abduction Scene"
-        },
-        {
-          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/358a234f-b990-48a8-8bb6-192e2bd33e0d.png",
-          "alt": "Hanuman Opens his chest"
-        },
-        {
-          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/61200837-316a-44c9-9edb-351cb198bc78.png",
-          "alt": "Hanuman recalls his powers (Pixar version)"
-        },
-        {
-          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/0ff3789d-7a36-42ea-b57c-5713718dd8bb.png",
-          "alt": "Ravan in Lanka Court"
-        },
-        {
-          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/6afff8e5-2cfa-4825-9221-c0498110293c.png",
-          "alt": "Surpanakha Demon form"
-        }
-      ]
     }
   ],
   "navigation": [
