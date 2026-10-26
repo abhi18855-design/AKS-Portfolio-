@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /portfolio/editor/
+Disallow: /portfolio/preview/
+Sitemap: https://abhi18855-design.github.io/portfolio/sitemap.xml

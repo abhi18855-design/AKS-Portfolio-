@@ -1,0 +1,52 @@
+ASTRA — MANUAL GITHUB UPLOAD
+
+This folder contains the complete portfolio, separate editor, optimized artwork,
+source content, automated deployment workflow, tests, and a ready-built dist folder.
+No credentials are included. GitHub sign-in was cancelled; nothing was deployed.
+
+1. Create a PUBLIC GitHub repository named exactly: portfolio
+
+2. Upload this folder's CONTENTS into the repository root, not the enclosing
+   “Portfolio site 2222” folder. Include:
+   .github/  .gitignore  content/  media/  scripts/  src/  tests/
+   package.json  README.md  VERIFICATION.md
+
+   IMPORTANT: .github is hidden in Finder. Press Command + Shift + . to show it.
+   Confirm GitHub contains this exact file:
+   .github/workflows/deploy.yml
+
+   If GitHub's uploader omits that hidden folder, choose Add file → Create new file,
+   name it .github/workflows/deploy.yml, and paste the contents of that local file.
+   The dist folder is already built, but the workflow rebuilds it automatically;
+   uploading dist is optional. Do not upload the outer ZIP as the website.
+
+3. In GitHub: Settings → Pages → Build and deployment → Source → GitHub Actions.
+
+4. Open Actions → Deploy portfolio → Run workflow → main.
+   If the first automatic run failed before Pages was enabled, rerun it now.
+   Wait until the deployment succeeds. Settings → Pages will show the live URL.
+
+5. The portfolio is at the repository's Pages URL ending in /portfolio/.
+   Add editor/ to that URL to open your separate editor.
+   Open both URLs and a project detail page to confirm they work.
+
+FUTURE EDITING — NO SOURCE CODE CHANGES
+
+Open the editor → Publishing. Enter your GitHub username, repository portfolio,
+and branch main. Create a fine-grained token restricted to ONLY this repository:
+  Contents: Read and write
+  Actions: Read
+  Metadata: Read (automatic)
+Paste the token into the editor's password field. It stays in memory for that
+session, so reconnect after refreshing. Do not paste tokens into chat or files.
+
+New project → Add details → Select multiple images → Choose a cover → Preview
+→ Publish this project → Confirm → Wait for “Live verified”.
+
+Images are optimized to WebP and thumbnails in your browser before uploading.
+Drafts save on this device. Download a backup in Publishing before clearing browser
+data. Social profile links can be added under Website content and appear in the
+footer and on Contact. Your supplied email and phone are already included.
+
+See README.md for storage limits and VERIFICATION.md for what was tested.
+Live GitHub publishing has not yet been tested because you chose manual deployment.
