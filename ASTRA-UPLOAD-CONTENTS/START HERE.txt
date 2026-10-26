@@ -1,0 +1,52 @@
+ASTRA — REPLACE THE OLD GITHUB DEPLOYMENT
+
+Correct repository: abhi18855-design/AKS-Portfolio-
+This package contains the NEW design and the full ASTRA web editor.
+
+1. Open your existing AKS-Portfolio- repository on GitHub.
+2. Choose Add file → Upload files. Upload the CONTENTS of ASTRA-UPLOAD-CONTENTS
+   into the repository root. Do not upload the enclosing folder or only the ZIP.
+   Commit changes. Existing same-name files must be replaced.
+   Both root and docs contain the new website so either old branch-based Pages
+   location can show the new design during the transition.
+3. Confirm .github/workflows/deploy.yml exists on GitHub.
+   The .github folder is hidden in Finder: press Command + Shift + . to reveal it.
+   If it was missed, choose Add file → Create new file. Enter this exact name:
+   .github/workflows/deploy.yml
+   Paste the complete contents of DEPLOY-WORKFLOW.txt and commit.
+4. Settings → Pages → Source: GitHub Actions (not Deploy from a branch).
+5. Actions → Deploy portfolio → Run workflow → main. Wait for success.
+   If a run started before Step 4 and failed, rerun it after enabling Actions.
+
+The public site should now show “Imagination, made visible.”
+The footer contains an “Editor portal” link. It opens /AKS-Portfolio-/editor/.
+Your previous editor.html bookmark redirects to that portal.
+The correct editor says ASTRA and has Projects, Website content, Media library,
+and Publishing sections. “Portfolio Studio CMS” is the OLD editor.
+
+EDIT & PUBLISH FROM THE WEB
+
+Open Editor portal → Publishing. Use GitHub username abhi18855-design,
+repository AKS-Portfolio-, branch main. Connect a fine-grained token restricted
+to this repository, with Contents read/write and Actions read (Metadata read is
+automatic). The token stays in memory; it is not embedded in the website.
+
+New project → Details → Upload multiple images → Choose cover → Preview →
+Publish this project → Confirm → Wait for Live verified.
+
+Images are optimized before upload. Browser drafts persist on this device.
+Website content edits homepage, About, Contact, and footer social links.
+Download a backup before clearing browser data. Committed draft text is readable
+in a public repository, though drafts are excluded from public portfolio pages.
+
+The editor page is accessible publicly; only an authorized GitHub token can
+publish changes to your repository. Ordinary visitors cannot change your site.
+
+WHAT WAS VERIFIED
+
+The corrected build and all 8 core tests pass. Local route/asset checks pass.
+Earlier browser checks passed compression, bulk upload, draft persistence,
+gallery ordering, duplication and deletion. Real GitHub publishing remains
+unverified until this package is uploaded and deployed.
+
+No GitHub authentication or remote changes were performed for this correction.
