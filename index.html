@@ -1,21 +1,568 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="dark">
 <head>
-  <meta name="keywords" content="AI Creative Producer, AI Advertising, AI Film Production, Generative AI, AI Video Production, Creative Direction, AI Advertisements">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parth Bhansali — Visual Designer · 3D & Motion</title>
+  <meta name="description" content="Portfolio of Parth Bhansali, visual communication designer specializing in 3D lookdev, motion design, and visual craft." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Tailwind CSS & Lucide Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          },
+          colors: {
+            bg: 'var(--color-bg)',
+            surface: 'var(--color-surface)',
+            elevated: 'var(--color-elevated)',
+            text: 'var(--color-text)',
+            muted: 'var(--color-muted)',
+            accent: 'var(--color-accent)',
+            border: 'var(--color-border)'
+          }
+        }
+      }
+    }
+  </script>
 
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="theme-color" content="#f3f1eb" />
-<link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
-<title>Abhishek Soni — AI Creative Producer</title>
-<meta name="description" content="AI advertising, films and visual experiences. Abhishek Soni brings cinema, generative AI and creative direction together." />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Abhishek Soni — AI Creative Producer" />
-<meta property="og:description" content="AI advertising, films and visual experiences. Abhishek Soni brings cinema, generative AI and creative direction together." />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Abhishek Soni — AI Creative Producer" />
-<meta name="twitter:description" content="AI advertising, films and visual experiences. Abhishek Soni brings cinema, generative AI and creative direction together." />
-  <script type="module" crossorigin src="./assets/index-2syRPlqK.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-B6XTG4zp.css"><link rel="canonical" href="https://abhi18855-design.github.io/Abhishek-Soni-Portfolio/"><meta property="og:url" content="https://abhi18855-design.github.io/Abhishek-Soni-Portfolio/"></head>
-<body><div id="root"></div><noscript>This portfolio needs JavaScript for its interactive project experience. Abhishek Soni — AI Creative Producer. AI advertising, film production and creative direction.</noscript></body>
+  <style>
+    :root {
+      --color-bg: #0B0B0A;
+      --color-surface: #141412;
+      --color-elevated: #1D1D19;
+      --color-text: #F4F1EA;
+      --color-muted: #9A968E;
+      --color-accent: #C89D66;
+      --color-border: #262522;
+    }
+    html.light {
+      --color-bg: #F6F4EF;
+      --color-surface: #EDEAE2;
+      --color-elevated: #E3DFD4;
+      --color-text: #161615;
+      --color-muted: #66625B;
+      --color-accent: #9A6B34;
+      --color-border: #D8D3C8;
+    }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--color-bg); color: var(--color-text); }
+  </style>
+</head>
+<body class="min-h-screen transition-colors duration-300">
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-40 border-b border-border/80 bg-bg/85 backdrop-blur-md">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <a href="#" class="flex items-center gap-3">
+        <span class="flex h-8 w-8 items-center justify-center rounded-full border border-border bg-surface font-serif text-lg text-accent">P</span>
+        <div>
+          <span id="nav-name" class="block font-medium tracking-tight">Parth Bhansali</span>
+          <span id="nav-role" class="block font-mono text-[10px] uppercase tracking-widest text-muted">Visual Designer · 3D & Motion</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm text-muted">
+        <a href="#work" class="hover:text-text transition-colors">Selected Work</a>
+        <a href="#about" class="hover:text-text transition-colors">About & Practice</a>
+        <a href="#contact" class="hover:text-text transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button id="theme-toggle" aria-label="Toggle Theme" class="flex h-9 w-9 items-center justify-center rounded-full border border-border bg-surface text-muted hover:border-accent hover:text-text">
+          <i data-lucide="sun" class="h-4 w-4 hidden dark:block"></i>
+          <i data-lucide="moon" class="h-4 w-4 block dark:hidden"></i>
+        </button>
+
+        <a href="editor.html" class="inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3.5 py-1.5 font-mono text-xs text-muted hover:border-accent hover:text-text">
+          <i data-lucide="sliders" class="h-3.5 w-3.5 text-accent"></i>
+          <span>Visual CMS</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="border-b border-border/60 py-16 sm:py-24">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+          <div class="lg:col-span-7">
+            <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3.5 py-1.5">
+              <span class="h-2 w-2 rounded-full bg-accent"></span>
+              <span id="hero-tagline" class="font-mono text-xs uppercase tracking-widest text-muted">Between Motion and Stillness</span>
+            </div>
+
+            <h1 id="hero-headline" class="font-serif text-5xl sm:text-7xl lg:text-[5.25rem] leading-[1.04] tracking-tight">
+              Moving Image, Still Form.
+            </h1>
+
+            <p id="hero-subheadline" class="mt-6 max-w-2xl text-base sm:text-lg leading-relaxed text-muted">
+              I am a communication designer drawn to how things look, move, and feel—shaping lighting, texture, and composition across 3D, motion, and visual identity until they carry a clear mood.
+            </p>
+
+            <div class="mt-9 flex flex-wrap items-center gap-4">
+              <a href="#work" class="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-[#0B0B0A] hover:opacity-95 transition-transform hover:scale-[1.02]">
+                <span>Explore Works</span>
+                <i data-lucide="arrow-down-right" class="h-4 w-4"></i>
+              </a>
+              <a id="hero-email-btn" href="mailto:bhansaliparth22@gmail.com" class="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-6 py-3 text-sm font-medium hover:border-accent">
+                <span>Get in Touch</span>
+              </a>
+            </div>
+
+            <div class="mt-12 grid grid-cols-3 gap-6 border-t border-border/60 pt-6 font-mono text-xs">
+              <div>
+                <span class="block text-[10px] uppercase tracking-widest text-muted">FOCUS</span>
+                <span class="mt-1 block">3D, Motion & Lookdev</span>
+              </div>
+              <div>
+                <span class="block text-[10px] uppercase tracking-widest text-muted">BASE</span>
+                <span id="hero-location" class="mt-1 block">Ahmedabad, India</span>
+              </div>
+              <div>
+                <span class="block text-[10px] uppercase tracking-widest text-muted">STATUS</span>
+                <span id="hero-status" class="mt-1 block text-accent">Open to Collaborations</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- FEATURED HERO CARD -->
+          <div class="lg:col-span-5" id="hero-featured-container">
+            <!-- Injected by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK GRID -->
+    <section id="work" class="py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 border-b border-border pb-8">
+          <div>
+            <span class="font-mono text-xs uppercase tracking-widest text-accent">SELECTED ARCHIVE</span>
+            <h2 class="mt-2 font-serif text-4xl sm:text-5xl">Selected Works</h2>
+          </div>
+
+          <!-- Category Filters -->
+          <div class="flex flex-wrap gap-2" id="category-filters">
+            <!-- Filter buttons injected by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div id="projects-grid" class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Project Cards injected by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="border-t border-border/60 py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-14">
+          <div class="lg:col-span-6">
+            <span class="font-mono text-xs uppercase tracking-widest text-accent">ABOUT & PRACTICE</span>
+            <h2 id="about-headline" class="mt-3 font-serif text-4xl sm:text-5xl leading-tight">
+              Building visuals from the ground up through form, light, and tactile detail.
+            </h2>
+            <div id="about-bio" class="mt-6 space-y-4 text-base leading-relaxed text-muted"></div>
+
+            <div class="mt-10 border-t border-border pt-8">
+              <h3 class="font-mono text-xs uppercase tracking-widest text-muted mb-4">BACKGROUND & EDUCATION</h3>
+              <div id="experience-list" class="space-y-4"></div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 space-y-8">
+            <div class="rounded-2xl border border-border bg-surface p-7">
+              <h3 class="font-mono text-xs uppercase tracking-widest text-accent">CORE DISCIPLINES</h3>
+              <div id="disciplines-list" class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3"></div>
+            </div>
+
+            <div class="rounded-2xl border border-border bg-surface p-7">
+              <h3 class="font-mono text-xs uppercase tracking-widest text-accent">SOFTWARE & PIPELINE</h3>
+              <div id="tools-list" class="mt-4 flex flex-wrap gap-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT FOOTER -->
+    <footer id="contact" class="border-t border-border bg-surface/40 pt-20 pb-12">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end justify-between pb-16">
+          <div class="lg:col-span-8">
+            <span class="font-mono text-xs uppercase tracking-widest text-accent">INITIATE DIALOGUE</span>
+            <h2 id="contact-heading" class="mt-3 font-serif text-4xl sm:text-6xl leading-tight">
+              Let's shape something with clarity and atmosphere.
+            </h2>
+            <div class="mt-8">
+              <a id="footer-email-btn" href="mailto:bhansaliparth22@gmail.com" class="inline-flex items-center gap-3 rounded-full bg-accent px-7 py-4 text-sm font-semibold text-[#0B0B0A] hover:opacity-95">
+                <i data-lucide="mail" class="h-4 w-4"></i>
+                <span id="footer-email-text">bhansaliparth22@gmail.com</span>
+              </a>
+            </div>
+          </div>
+
+          <div id="social-links" class="lg:col-span-4 flex flex-wrap lg:justify-end gap-3"></div>
+        </div>
+
+        <div class="border-t border-border/60 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs text-muted">
+          <span id="copyright-text">© 2026 Parth Bhansali. All rights reserved.</span>
+          <a href="editor.html" class="text-accent hover:underline">Open Visual Studio CMS →</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- PROJECT DETAIL MODAL -->
+  <div id="project-modal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-black/90 p-4 sm:p-8 backdrop-blur-md">
+    <div class="relative mx-auto max-w-5xl rounded-2xl border border-border bg-bg p-6 sm:p-10 shadow-2xl">
+      <button id="modal-close-btn" class="absolute right-5 top-5 rounded-full border border-border bg-surface p-2 text-muted hover:text-text">
+        <i data-lucide="x" class="h-5 w-5"></i>
+      </button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- EMBEDDED DEFAULT DATA & CLIENT LOGIC -->
+  <script>
+    // Authentic Portfolio Data (Acts as instant fallback if file:// blocks fetch)
+    const DEFAULT_DATA = {
+      siteMeta: {
+        name: "Parth Bhansali",
+        role: "Visual Designer · 3D & Motion",
+        tagline: "Between Motion and Stillness",
+        heroHeadline: "Moving Image, Still Form.",
+        heroSubheadline: "I am a communication designer drawn to how things look, move, and feel—shaping lighting, texture, and composition across 3D, motion, and visual identity until they carry a clear mood.",
+        availabilityText: "Available for select collaborations & internships",
+        location: "Ahmedabad, India"
+      },
+      about: {
+        headline: "Building visuals from the ground up through form, light, and tactile detail.",
+        paragraphs: [
+          "I am a communication designer drawn to how things look, move, and feel. My work moves between visual design, 3D, and motion, with a focus on form, atmosphere, and detail.",
+          "I enjoy building visuals from the ground up—shaping lighting, texture, and composition until they carry a clear mood. Whether crafting horological product studies or quiet atmospheric stills, I treat every frame as both an editorial composition and a sensory object."
+        ],
+        disciplines: ["3D Product Visualization", "Motion Design & Direction", "Lighting, Shading & Lookdev", "Visual Identity & Communication", "Editorial Layout & Typography"],
+        tools: ["Blender", "Cinema 4D", "After Effects", "Premiere Pro", "Photoshop", "Illustrator", "Figma", "Lightroom"],
+        experience: [
+          { period: "2023 — 2027", title: "B.Des in Visual Communication", institution: "UID — Karnavati University (Semester 6)", description: "Focusing on visual communication, motion graphics, 3D visualization, publication design, and brand systems." },
+          { period: "2024 — Present", title: "Independent Visual & 3D Designer", institution: "Freelance & Studio Commissions", description: "Creating 3D product films, lookdev explorations, and visual identity assets with an emphasis on material realism and pacing." }
+        ]
+      },
+      contact: {
+        email: "bhansaliparth22@gmail.com",
+        ctaHeading: "Let's shape something with clarity and atmosphere.",
+        instagram: "https://instagram.com/parth.bhansali",
+        behance: "https://behance.net/parthbhansali",
+        linkedin: "https://linkedin.com/in/parthbhansali"
+      },
+      projects: [
+        {
+          id: "proj-tissot",
+          slug: "tissot-time-refined",
+          title: "Tissot — Time, Refined",
+          subtitle: "Horological 3D Lookdev & Specular Motion Study",
+          category: "3D & Motion",
+          year: "2025",
+          role: "3D Lookdev, Lighting & Motion Direction",
+          clientOrContext: "Brand Film Study",
+          tools: ["Blender", "After Effects", "Photoshop"],
+          featured: true,
+          thumbnail: "images/projects/tissot/thumbnail.webp",
+          summary: "A study in metallic precision, brushed steel micro-textures, and controlled studio reflections exploring the quiet mechanics of a classic chronograph.",
+          challenge: "Watchmaking visuals rely on razor-sharp grazing highlights. The challenge was balancing dramatic chiaroscuro with dial legibility and anisotropic metal shaders.",
+          process: "Built procedural brushed-steel and sapphire glass shaders. Choreographed slow, weighted camera dolly moves that let light travel across the bezel.",
+          outcome: "A cohesive series of macro styleframes and motion sequences capturing the weight and craft of Swiss horology.",
+          gallery: ["images/projects/tissot/thumbnail.webp"]
+        },
+        {
+          id: "proj-preet",
+          slug: "preet-heritage-in-motion",
+          title: "Preet — Heritage in Motion",
+          subtitle: "Cultural Typography, Warmth & Visual Narrative",
+          category: "Visual Identity",
+          year: "2025",
+          role: "Art Direction, Visual Identity & Motion",
+          clientOrContext: "Cultural Visual Exploration",
+          tools: ["Illustrator", "Photoshop", "After Effects"],
+          featured: true,
+          thumbnail: "images/projects/preet/thumbnail.webp",
+          summary: "Translating traditional Indian textile warmth, folk motifs, and expressive letterforms into a contemporary moving visual system.",
+          challenge: "Preserving the tactile imperfection and emotional warmth of heritage craft when translating it into digital motion.",
+          process: "Combined calligraphic curves with rich earthen palettes, grain textures, and rhythmic transitions inspired by classical cadence.",
+          outcome: "An evocative visual identity and title study bridging archival Indian aesthetics with modern editorial clarity.",
+          gallery: ["images/projects/preet/thumbnail.webp"]
+        },
+        {
+          id: "proj-afterlight",
+          slug: "afterlight",
+          title: "Afterlight",
+          subtitle: "Atmospheric Lighting, Volumetric Fog & Mood Studies",
+          category: "Lighting & Lookdev",
+          year: "2024",
+          role: "3D Scene Assembly & Color Grading",
+          clientOrContext: "Visual Research Series",
+          tools: ["Blender", "Photoshop", "Lightroom"],
+          featured: true,
+          thumbnail: "images/projects/afterlight/thumbnail.webp",
+          summary: "An exploration of dusk, residual light, and architectural solitude—studying how a single light source can anchor emotion in 3D space.",
+          challenge: "Creating believable volumetric depth and filmic halation without over-lighting the digital geometry.",
+          process: "Experimented with physical sky models, gobos, and subtle surface roughness variations to catch late-evening light.",
+          outcome: "A series of still frames that read like cinema stills, emphasizing mood and negative space.",
+          gallery: ["images/projects/afterlight/thumbnail.webp"]
+        },
+        {
+          id: "proj-still-moving",
+          slug: "still-moving",
+          title: "Still / Moving",
+          subtitle: "Rhythm, Pacing & Kinetic Form Explorations",
+          category: "3D & Motion",
+          year: "2024",
+          role: "Motion Designer & 3D Generalist",
+          clientOrContext: "Studio Motion Anthology",
+          tools: ["Blender", "Cinema 4D", "After Effects"],
+          featured: true,
+          thumbnail: "images/projects/still-moving/thumbnail.webp",
+          summary: "Short-form kinetic studies investigating the tension between static sculptural equilibrium and sudden mechanical motion.",
+          challenge: "Giving digital primitives a sense of physical mass, friction, and pendulum-like momentum.",
+          process: "Focused on custom animation curves, micro-secondary motion, and tactile shader contrast between matte stone and metal.",
+          outcome: "A curated collection of seamless loops and motion vignettes that anchor the portfolio's core philosophy.",
+          gallery: ["images/projects/still-moving/thumbnail.webp"]
+        },
+        {
+          id: "proj-the-in-between",
+          slug: "the-in-between",
+          title: "The In-Between",
+          subtitle: "Liminal Spaces, Texture & Quiet Observation",
+          category: "Photography",
+          year: "2024",
+          role: "Photography & Visual Direction",
+          clientOrContext: "Personal Editorial Series",
+          tools: ["Lightroom", "Photoshop"],
+          featured: false,
+          thumbnail: "images/projects/the-in-between/thumbnail.webp",
+          summary: "Observational frames capturing transitional moments, quiet geometry, and natural light interplay in everyday environments.",
+          challenge: "Finding narrative cohesion across disparate moments through strict compositional discipline.",
+          process: "Curated and sequenced stills based on directional light, shadow geometry, and warm-to-cool color counterpoints.",
+          outcome: "An intimate visual essay that informs my approach to virtual camera placement and lighting in 3D.",
+          gallery: ["images/projects/the-in-between/thumbnail.webp"]
+        },
+        {
+          id: "proj-form-feeling",
+          slug: "form-feeling",
+          title: "Form & Feeling",
+          subtitle: "Materiality, Surface Imperfection & Tactile Shaders",
+          category: "Experimental",
+          year: "2024",
+          role: "3D Lookdev & Shader Artist",
+          clientOrContext: "Material Library Exploration",
+          tools: ["Blender", "Photoshop"],
+          featured: false,
+          thumbnail: "images/projects/form-feeling/thumbnail.webp",
+          summary: "Exploring how subsurface scattering, micro-scratches, and organic silhouettes evoke a physical, touchable response on screen.",
+          challenge: "Overcoming the sterile perfection of default computer graphics to make digital objects feel aged and handled.",
+          process: "Layered procedural noise maps, fingerprint roughness breakups, and soft studio lighting to emphasize surface topography.",
+          outcome: "A foundational lookdev library used across subsequent commercial and personal 3D projects.",
+          gallery: ["images/projects/form-feeling/thumbnail.webp"]
+        }
+      ]
+    };
+
+    let activeData = DEFAULT_DATA;
+    let selectedCategory = "All";
+
+    async function init() {
+      // 1. Try loading user's local CMS draft or content.json
+      const localDraft = localStorage.getItem('parth_portfolio_cms_draft_v2');
+      if (localDraft) {
+        try { activeData = JSON.parse(localDraft); } catch(e){}
+      } else {
+        try {
+          const res = await fetch('content.json');
+          if (res.ok) activeData = await res.json();
+        } catch(e){}
+      }
+
+      renderPage();
+      lucide.createIcons();
+    }
+
+    function renderPage() {
+      // Site Meta
+      document.getElementById('nav-name').innerText = activeData.siteMeta.name;
+      document.getElementById('nav-role').innerText = activeData.siteMeta.role;
+      document.getElementById('hero-tagline').innerText = activeData.siteMeta.tagline;
+      document.getElementById('hero-headline').innerText = activeData.siteMeta.heroHeadline;
+      document.getElementById('hero-subheadline').innerText = activeData.siteMeta.heroSubheadline;
+      document.getElementById('hero-location').innerText = activeData.siteMeta.location;
+      document.getElementById('hero-status').innerText = activeData.siteMeta.availabilityText;
+      document.getElementById('hero-email-btn').href = `mailto:${activeData.contact.email}`;
+
+      // Featured Hero Card
+      const featured = activeData.projects.find(p => p.featured) || activeData.projects[0];
+      if (featured) {
+        document.getElementById('hero-featured-container').innerHTML = `
+          <div onclick="openProject('${featured.id}')" class="group cursor-pointer overflow-hidden rounded-2xl border border-border bg-surface p-3 transition-all hover:border-accent">
+            <div class="mb-2 flex items-center justify-between px-1 font-mono text-[11px] text-muted">
+              <span class="text-accent flex items-center gap-1"><i data-lucide="sparkles" class="h-3 w-3"></i> FEATURED STUDY</span>
+              <span>${featured.year}</span>
+            </div>
+            <div class="aspect-video overflow-hidden rounded-xl bg-elevated">
+              <img src="${featured.thumbnail}" alt="${featured.title}" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='images/ui/aperture.webp'"/>
+            </div>
+            <div class="mt-3 flex items-center justify-between px-1">
+              <div>
+                <h2 class="font-serif text-2xl text-text group-hover:text-accent transition-colors">${featured.title}</h2>
+                <p class="text-xs text-muted">${featured.subtitle}</p>
+              </div>
+              <span class="rounded-full border border-border px-3 py-1 font-mono text-[10px] uppercase text-muted group-hover:text-text">View →</span>
+            </div>
+          </div>
+        `;
+      }
+
+      // Category Filters
+      const categories = ["All", ...new Set(activeData.projects.map(p => p.category))];
+      document.getElementById('category-filters').innerHTML = categories.map(cat => `
+        <button onclick="setCategory('${cat}')" class="rounded-full px-4 py-1.5 font-mono text-xs transition-colors ${selectedCategory === cat ? 'bg-text text-bg font-semibold' : 'border border-border bg-surface text-muted hover:text-text'}">
+          ${cat}
+        </button>
+      `).join('');
+
+      // Projects Grid
+      const filtered = selectedCategory === "All" ? activeData.projects : activeData.projects.filter(p => p.category === selectedCategory);
+      document.getElementById('projects-grid').innerHTML = filtered.map((proj, idx) => `
+        <article onclick="openProject('${proj.id}')" class="group cursor-pointer rounded-2xl border border-border bg-surface/60 p-4 transition-all hover:-translate-y-1 hover:border-accent">
+          <div class="mb-3 flex justify-between font-mono text-[11px] text-muted">
+            <span>[${(idx + 1).toString().padStart(2, '0')}] · ${proj.category.toUpperCase()}</span>
+            <span>${proj.year}</span>
+          </div>
+          <div class="aspect-video overflow-hidden rounded-xl bg-elevated">
+            <img src="${proj.thumbnail}" alt="${proj.title}" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='images/ui/aperture.webp'"/>
+          </div>
+          <div class="mt-4 flex justify-between items-start">
+            <div>
+              <h3 class="font-serif text-2xl sm:text-3xl text-text group-hover:text-accent transition-colors">${proj.title}</h3>
+              <p class="mt-1 text-xs text-muted">${proj.subtitle}</p>
+            </div>
+            <span class="rounded-full border border-border bg-elevated p-2 text-muted group-hover:text-accent">
+              <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+            </span>
+          </div>
+          <p class="mt-3 text-sm text-muted line-clamp-2">${proj.summary}</p>
+          <div class="mt-4 flex flex-wrap gap-1.5 border-t border-border/50 pt-3">
+            ${proj.tools.slice(0, 4).map(t => `<span class="rounded bg-elevated px-2 py-0.5 font-mono text-[10px] text-muted">${t}</span>`).join('')}
+          </div>
+        </article>
+      `).join('');
+
+      // About
+      document.getElementById('about-headline').innerText = activeData.about.headline;
+      document.getElementById('about-bio').innerHTML = activeData.about.paragraphs.map(p => `<p>${p}</p>`).join('');
+      document.getElementById('disciplines-list').innerHTML = activeData.about.disciplines.map(d => `
+        <div class="flex items-center gap-2 rounded-lg border border-border bg-elevated px-3.5 py-2 text-xs text-text">
+          <span class="h-1.5 w-1.5 rounded-full bg-accent"></span>
+          <span>${d}</span>
+        </div>
+      `).join('');
+      document.getElementById('tools-list').innerHTML = activeData.about.tools.map(t => `
+        <span class="rounded-full border border-border bg-elevated px-3 py-1 font-mono text-xs text-text">${t}</span>
+      `).join('');
+      document.getElementById('experience-list').innerHTML = activeData.about.experience.map(e => `
+        <div class="rounded-xl border border-border bg-surface p-4">
+          <div class="flex justify-between text-sm font-medium"><span>${e.title}</span><span class="font-mono text-xs text-accent">${e.period}</span></div>
+          <p class="text-xs text-muted mt-0.5">${e.institution}</p>
+          <p class="text-xs text-muted mt-2">${e.description}</p>
+        </div>
+      `).join('');
+
+      // Contact
+      document.getElementById('contact-heading').innerText = activeData.contact.ctaHeading;
+      document.getElementById('footer-email-btn').href = `mailto:${activeData.contact.email}`;
+      document.getElementById('footer-email-text').innerText = activeData.contact.email;
+      
+      const socials = [
+        { name: "Instagram", url: activeData.contact.instagram },
+        { name: "Behance", url: activeData.contact.behance },
+        { name: "LinkedIn", url: activeData.contact.linkedin }
+      ].filter(s => s.url);
+      document.getElementById('social-links').innerHTML = socials.map(s => `
+        <a href="${s.url}" target="_blank" rel="noopener noreferrer" class="rounded-full border border-border bg-surface px-4 py-2 font-mono text-xs text-text hover:border-accent flex items-center gap-1.5">
+          <span>${s.name}</span> <i data-lucide="arrow-up-right" class="h-3.5 w-3.5 text-accent"></i>
+        </a>
+      `).join('');
+
+      lucide.createIcons();
+    }
+
+    function setCategory(cat) {
+      selectedCategory = cat;
+      renderPage();
+    }
+
+    function openProject(id) {
+      const p = activeData.projects.find(x => x.id === id);
+      if (!p) return;
+      document.getElementById('modal-content').innerHTML = `
+        <span class="font-mono text-xs text-accent uppercase">${p.category} · ${p.year}</span>
+        <h2 class="font-serif text-4xl sm:text-5xl mt-2">${p.title}</h2>
+        <p class="font-serif text-xl italic text-accent mt-1">${p.subtitle}</p>
+        <p class="text-base text-muted leading-relaxed mt-4">${p.summary}</p>
+        
+        <div class="mt-6 aspect-video overflow-hidden rounded-xl border border-border bg-elevated">
+          <img src="${p.thumbnail}" alt="${p.title}" class="h-full w-full object-cover" onerror="this.src='images/ui/aperture.webp'"/>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="rounded-xl border border-border bg-surface p-4">
+            <span class="font-mono text-[10px] text-accent uppercase">01 // The Challenge</span>
+            <p class="text-xs text-muted mt-2">${p.challenge || 'Exploration of form, visual contrast, and composition.'}</p>
+          </div>
+          <div class="rounded-xl border border-border bg-surface p-4">
+            <span class="font-mono text-[10px] text-accent uppercase">02 // Process & Lookdev</span>
+            <p class="text-xs text-muted mt-2">${p.process || 'Iterative lighting, shader experiments, and camera staging.'}</p>
+          </div>
+          <div class="rounded-xl border border-border bg-surface p-4">
+            <span class="font-mono text-[10px] text-accent uppercase">03 // Outcome</span>
+            <p class="text-xs text-muted mt-2">${p.outcome || 'Final high-fidelity frame renders and motion sequences.'}</p>
+          </div>
+        </div>
+
+        <div class="mt-6 flex flex-wrap gap-2 border-t border-border pt-4">
+          ${p.tools.map(t => `<span class="rounded bg-elevated px-2.5 py-1 font-mono text-xs text-text">${t}</span>`).join('')}
+        </div>
+      `;
+      document.getElementById('project-modal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    document.getElementById('modal-close-btn').addEventListener('click', () => {
+      document.getElementById('project-modal').classList.add('hidden');
+    });
+
+    // Theme Toggle
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      document.documentElement.classList.toggle('light');
+    });
+
+    window.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
 </html>
