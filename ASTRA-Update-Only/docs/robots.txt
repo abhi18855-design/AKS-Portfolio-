@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /AKS-Portfolio-/editor/
+Disallow: /AKS-Portfolio-/preview/
+Sitemap: https://abhi18855-design.github.io/AKS-Portfolio-/sitemap.xml
