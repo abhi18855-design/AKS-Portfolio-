@@ -1,0 +1,409 @@
+{
+  "schemaVersion": 1,
+  "siteConfig": {
+    "name": "Abhishek Soni",
+    "title": "AI Creative Producer",
+    "email": "abhi18855@gmail.com",
+    "instagram": "",
+    "linkedin": "https://www.linkedin.com/in/abhishek-soni-3b58ab186/?isSelfProfile=true",
+    "youtube": "",
+    "description": "AI advertising, films and visual experiences. Abhishek Soni brings cinema, generative AI and creative direction together.",
+    "seo": {
+      "siteUrl": "https://abhi18855-design.github.io/AKS-Portfolio-/",
+      "title": "Abhishek Soni — AI Creative Producer",
+      "keywords": "AI Creative Producer, AI Advertising, AI Film Production, Generative AI, AI Video Production, Creative Direction, AI Advertisements"
+    },
+    "accent": "#ff2daa",
+    "accentContrast": "#000000",
+    "heroDescription": "Imagination,\nmade visible.",
+    "heroNote": "Human imagination.\nArtificial intelligence.\nExtraordinary possibilities.",
+    "contactHeading": "Have a story\nto build?",
+    "phone": "7999198545",
+    "twitter": "",
+    "contactDescription": "For projects, collaborations, freelance work and professional opportunities.",
+    "contactCta": "Let's Work Together ",
+    "otherSocials": []
+  },
+  "profile": {
+    "introduction": "I work at the intersection of cinema, advertising and emerging technology. Turning an idea into a world you can see — and a story you can feel.",
+    "biography": "With a background in journalism and media, I bring a storyteller’s instinct to AI-powered production. My practice connects creative direction, generative imagery, filmmaking and digital content, from the first visual concept to the final frame.",
+    "skills": {
+      "Creative": [
+        "Creative Direction",
+        "Visual Storytelling",
+        "Art Direction",
+        "Concept Development"
+      ],
+      "AI": [
+        "Generative Image",
+        "Generative Video",
+        "AI Characters",
+        "AI Advertising"
+      ],
+      "Production": [
+        "Video Editing",
+        "Motion",
+        "Camera",
+        "Post Production"
+      ],
+      "Digital": [
+        "Social Media",
+        "SEO",
+        "Digital Storytelling",
+        "Content Strategy"
+      ]
+    },
+    "experience": "",
+    "education": "",
+    "additional": ""
+  },
+  "services": [
+    [
+      "AI advertising",
+      "Campaign ideas translated into striking visuals. From the first proposition to a distinctive commercial world."
+    ],
+    [
+      "AI film production",
+      "Cinematic stories shaped through generative imagery, shot design, motion and a considered edit."
+    ],
+    [
+      "Generative visuals",
+      "Original image worlds with a consistent visual language, developed around a clear creative intention."
+    ],
+    [
+      "Creative direction",
+      "The idea, the visual treatment and the decisions that make every frame belong to the same story."
+    ],
+    [
+      "AI character development",
+      "Character concepts, expressive identities and visual consistency across scenes and formats."
+    ],
+    [
+      "Product films",
+      "Light, texture and movement that bring a product’s smallest details into focus."
+    ],
+    [
+      "Social media films",
+      "Platform-conscious stories, built to catch attention and carry an idea in a short span of time."
+    ],
+    [
+      "Visual concept development",
+      "Mood, narrative and art direction explored before production, so the story starts with intention."
+    ]
+  ],
+  "process": [
+    [
+      "Concept",
+      "Start with the story.",
+      "Find the tension, the audience and the one thing the work needs to say."
+    ],
+    [
+      "Visual development",
+      "Give the idea a world.",
+      "Develop treatments, references, palettes and shot language."
+    ],
+    [
+      "AI generation",
+      "Explore. Direct. Refine.",
+      "Build images and sequences with intention, consistency and a critical eye."
+    ],
+    [
+      "Motion + editing",
+      "Find the rhythm.",
+      "Shape pacing, transitions, sound and the emotional arc of the film."
+    ],
+    [
+      "Final delivery",
+      "Make every frame count.",
+      "Finish the grade, polish the details and prepare the right formats."
+    ]
+  ],
+  "projects": [
+    {
+      "id": "b6c520f6-b319-4672-b383-4fc94968f222",
+      "slug": "project-b6c520f6",
+      "mediaFolder": "b6c520f6-b319-4672-b383-4fc94968f222",
+      "title": "RRRR (India Today Group)",
+      "subtitle": "Raghupati Raghav Raja Ram",
+      "description": "A pilot AI micro-drama project for the India Today Group, reimagining the epic Ramayan through AI-powered filmmaking. The project explores generative AI for cinematic storytelling, character creation, and visual world-building, bringing mythology to life through an innovative digital format.",
+      "category": "AI Micro-Drama",
+      "year": 2026,
+      "tools": [
+        "GPT Image 2",
+        "Adobe Firefly",
+        "Wan 3.0 Omni",
+        "Higgsfield",
+        "ElevenLabs",
+        "Adobe Premiere Pro",
+        "Adobe Photoshop"
+      ],
+      "tags": [],
+      "thumbnail": "https://i.ytimg.com/vi/H9IOeVVxx-4/hqdefault.jpg",
+      "featured": true,
+      "demo": false,
+      "published": true,
+      "order": 1,
+      "process": [],
+      "mediaMode": "external",
+      "mediaType": "image",
+      "mediaFit": "cover",
+      "role": "AI Creative Producer",
+      "projectUrl": "https://youtube.com/shorts/H9IOeVVxx-4?si=F0BUEWrCfhE3TTlT",
+      "platform": "YouTube",
+      "thumbnailSmall": "",
+      "hero": "",
+      "gallery": [
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/13e78c24-b535-469d-a88c-c547b2ac1917.png",
+          "alt": "Hanuman in Kishkindha"
+        },
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/9abf2c82-142a-4e6b-84ee-a060a21745ae.png",
+          "alt": "Ram in Panchvati"
+        },
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/aaae40b5-2fab-4bc3-8509-238cf5c09438.png",
+          "alt": "Surpankaha disguise form"
+        },
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/cf3f8e7a-9952-4458-bfeb-748d4b6558f1.png",
+          "alt": "Sita Abduction Scene"
+        },
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/358a234f-b990-48a8-8bb6-192e2bd33e0d.png",
+          "alt": "Hanuman Opens his chest"
+        },
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/61200837-316a-44c9-9edb-351cb198bc78.png",
+          "alt": "Hanuman recalls his powers (Pixar version)"
+        },
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/0ff3789d-7a36-42ea-b57c-5713718dd8bb.png",
+          "alt": "Ravan in Lanka Court"
+        },
+        {
+          "src": "media/projects/b6c520f6-b319-4672-b383-4fc94968f222/6afff8e5-2cfa-4825-9221-c0498110293c.png",
+          "alt": "Surpanakha Demon form"
+        }
+      ]
+    },
+    {
+      "id": "da1a6a04-1eba-4344-8f47-c86a75df6266",
+      "slug": "project-da1a6a04",
+      "mediaFolder": "da1a6a04-1eba-4344-8f47-c86a75df6266",
+      "title": "PREET JEWELLERS",
+      "subtitle": "Where Love Becomes Legacy",
+      "description": "",
+      "category": "AI Ad Film",
+      "year": 2026,
+      "tools": [
+        "Frame Generation",
+        "Video Generation",
+        "Video Editing",
+        "Graphics"
+      ],
+      "tags": [],
+      "thumbnail": "https://i.ytimg.com/vi/FdKPiOugZ-E/hqdefault.jpg",
+      "featured": true,
+      "demo": false,
+      "published": true,
+      "order": 2,
+      "process": [],
+      "mediaMode": "external",
+      "mediaType": "image",
+      "mediaFit": "cover",
+      "role": "Creative Producer/Creator",
+      "projectUrl": "https://youtube.com/shorts/FdKPiOugZ-E",
+      "platform": "YouTube",
+      "thumbnailSmall": "",
+      "hero": "",
+      "gallery": [
+        {
+          "src": "media/projects/da1a6a04-1eba-4344-8f47-c86a75df6266/1de0a38b-30d7-4f25-8056-44b90b793c60.webp",
+          "thumb": "media/projects/da1a6a04-1eba-4344-8f47-c86a75df6266/1de0a38b-30d7-4f25-8056-44b90b793c60-thumb.webp",
+          "alt": "1"
+        },
+        {
+          "src": "media/projects/da1a6a04-1eba-4344-8f47-c86a75df6266/a68e3ecd-c15b-4919-bf53-e74ed143bc59.webp",
+          "thumb": "media/projects/da1a6a04-1eba-4344-8f47-c86a75df6266/a68e3ecd-c15b-4919-bf53-e74ed143bc59-thumb.webp",
+          "alt": "2"
+        },
+        {
+          "src": "media/projects/da1a6a04-1eba-4344-8f47-c86a75df6266/7b288502-f425-4c59-88ed-15e015c763ba.webp",
+          "thumb": "media/projects/da1a6a04-1eba-4344-8f47-c86a75df6266/7b288502-f425-4c59-88ed-15e015c763ba-thumb.webp",
+          "alt": "3"
+        },
+        {
+          "src": "media/projects/da1a6a04-1eba-4344-8f47-c86a75df6266/a4315654-e3ac-4b45-969e-f699734b386a.webp",
+          "thumb": "media/projects/da1a6a04-1eba-4344-8f47-c86a75df6266/a4315654-e3ac-4b45-969e-f699734b386a-thumb.webp",
+          "alt": "4"
+        },
+        {
+          "src": "media/projects/da1a6a04-1eba-4344-8f47-c86a75df6266/fe65ae59-41f3-4d7b-9ff1-32a53281730b.webp",
+          "thumb": "media/projects/da1a6a04-1eba-4344-8f47-c86a75df6266/fe65ae59-41f3-4d7b-9ff1-32a53281730b-thumb.webp",
+          "alt": "5"
+        },
+        {
+          "src": "media/projects/da1a6a04-1eba-4344-8f47-c86a75df6266/265ecea4-ff53-4117-a37e-2426bfb500bf.webp",
+          "thumb": "media/projects/da1a6a04-1eba-4344-8f47-c86a75df6266/265ecea4-ff53-4117-a37e-2426bfb500bf-thumb.webp",
+          "alt": "6"
+        }
+      ]
+    },
+    {
+      "id": "01",
+      "title": "TISSOT",
+      "subtitle": "Time, refined",
+      "slug": "tissot-time-refined",
+      "category": "AI PRODUCT FILM",
+      "year": 2026,
+      "description": "An independent visual concept exploring the quiet precision of time. Sculpted light, tactile surfaces and a moment held still. Not commissioned by or affiliated with Tissot.",
+      "role": "Concept direction · Visual exploration",
+      "tools": [
+        "Generative image",
+        "Art direction"
+      ],
+      "thumbnail": "media/projects/01/9596bb63-064f-4bba-a101-c05824039e93.png",
+      "thumbnailSmall": "",
+      "hero": "",
+      "tags": [
+        "Product",
+        "Luxury",
+        "Concept"
+      ],
+      "featured": true,
+      "demo": false,
+      "order": 3,
+      "process": [],
+      "mediaFolder": "tissot-time-refined",
+      "published": true,
+      "mediaMode": "external",
+      "platform": "YouTube",
+      "media": "",
+      "mediaType": "image",
+      "mediaFit": "cover",
+      "projectUrl": "https://youtube.com/shorts/AuKIyApArcA?feature=share",
+      "gallery": [
+        {
+          "src": "media/projects/01/0241ed29-d0e6-4ab8-bc0f-735b8aef3310.webp",
+          "thumb": "media/projects/01/0241ed29-d0e6-4ab8-bc0f-735b8aef3310-thumb.webp",
+          "alt": "1"
+        },
+        {
+          "src": "media/projects/01/1c791f9b-6a7c-41f1-8cd6-af0e34a77f2a.webp",
+          "thumb": "media/projects/01/1c791f9b-6a7c-41f1-8cd6-af0e34a77f2a-thumb.webp",
+          "alt": "2"
+        },
+        {
+          "src": "media/projects/01/3ed6b01b-674b-4917-9937-26dd1a7cbb02.webp",
+          "thumb": "media/projects/01/3ed6b01b-674b-4917-9937-26dd1a7cbb02-thumb.webp",
+          "alt": "3"
+        },
+        {
+          "src": "media/projects/01/cdbd41de-bd8e-44b8-9c06-9b18f79bb87e.webp",
+          "thumb": "media/projects/01/cdbd41de-bd8e-44b8-9c06-9b18f79bb87e-thumb.webp",
+          "alt": "4"
+        },
+        {
+          "src": "media/projects/01/88363664-33c0-4a16-8599-d2de41be1aae.webp",
+          "thumb": "media/projects/01/88363664-33c0-4a16-8599-d2de41be1aae-thumb.webp",
+          "alt": "5"
+        },
+        {
+          "src": "media/projects/01/db337cf1-7000-47d0-a671-395bf5ab9efd.webp",
+          "thumb": "media/projects/01/db337cf1-7000-47d0-a671-395bf5ab9efd-thumb.webp",
+          "alt": "6"
+        },
+        {
+          "src": "media/projects/01/10b1d38b-a998-4f73-a90f-1b478787306f.webp",
+          "thumb": "media/projects/01/10b1d38b-a998-4f73-a90f-1b478787306f-thumb.webp",
+          "alt": "7"
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "title": "PREET ETHNIC WEAR",
+      "subtitle": "Culture Worn Forward",
+      "slug": "preet-culture-worn-forward",
+      "category": "AI BRAND AD",
+      "year": 2026,
+      "description": "A fictional fashion concept where traditional textiles meet cinematic space. An exploration of movement, memory and the warmth of heritage.",
+      "role": "Concept direction · Visual exploration",
+      "tools": [
+        "Generative image",
+        "Visual storytelling"
+      ],
+      "thumbnail": "media/projects/02/d39bdfd0-9b81-41a7-bc14-c4ad8eb6f281.png",
+      "thumbnailSmall": "",
+      "tags": [
+        "Fashion",
+        "Brand",
+        "Advertisment"
+      ],
+      "featured": true,
+      "demo": true,
+      "order": 4,
+      "process": [],
+      "mediaFolder": "preet-heritage-in-motion",
+      "published": true,
+      "mediaMode": "external",
+      "platform": "YouTube",
+      "media": "",
+      "mediaType": "image",
+      "mediaFit": "contain",
+      "projectUrl": "https://youtube.com/shorts/8ph1nkdmS34?feature=share",
+      "hero": "",
+      "gallery": [
+        {
+          "src": "media/projects/02/f34a4275-ec06-4cbf-beba-088d449e42dd.webp",
+          "thumb": "media/projects/02/f34a4275-ec06-4cbf-beba-088d449e42dd-thumb.webp",
+          "alt": "1"
+        },
+        {
+          "src": "media/projects/02/1eda6a3d-8c3a-4acb-8779-d0f0aa210fb7.webp",
+          "thumb": "media/projects/02/1eda6a3d-8c3a-4acb-8779-d0f0aa210fb7-thumb.webp",
+          "alt": "2"
+        },
+        {
+          "src": "media/projects/02/c0d492bd-4696-4f0c-9113-1c95171afae8.webp",
+          "thumb": "media/projects/02/c0d492bd-4696-4f0c-9113-1c95171afae8-thumb.webp",
+          "alt": "3"
+        },
+        {
+          "src": "media/projects/02/1d56464f-4363-4dbf-86b1-ee76e7f30c87.webp",
+          "thumb": "media/projects/02/1d56464f-4363-4dbf-86b1-ee76e7f30c87-thumb.webp",
+          "alt": "4"
+        },
+        {
+          "src": "media/projects/02/fa2766d6-9b50-4afe-939e-d606353549d0.webp",
+          "thumb": "media/projects/02/fa2766d6-9b50-4afe-939e-d606353549d0-thumb.webp",
+          "alt": "5"
+        },
+        {
+          "src": "media/projects/02/7b6060a7-6e7d-4501-ae6c-c0f82c28ada3.webp",
+          "thumb": "media/projects/02/7b6060a7-6e7d-4501-ae6c-c0f82c28ada3-thumb.webp",
+          "alt": "6"
+        }
+      ]
+    }
+  ],
+  "navigation": [
+    {
+      "label": "Work",
+      "path": "/projects"
+    },
+    {
+      "label": "Services",
+      "path": "/services"
+    },
+    {
+      "label": "About",
+      "path": "/about"
+    },
+    {
+      "label": "Contact",
+      "path": "/contact"
+    }
+  ]
+}
