@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {site} from '../utils/settings';
+import {url} from '../utils/media';
+---
+<BaseLayout title="Contact" description={site.contactIntro||site.description}>
+  <section class="contact-page shell"><p class="eyebrow">SAY HELLO</p><h1>{site.contactTitle}</h1><p class="contact-intro">{site.contactIntro}</p><a class="contact-email" href={`mailto:${site.email}`}>{site.email} <span aria-hidden="true">↗</span></a><div class="contact-details"><div><p class="eyebrow">WHERE</p><p>{site.location}</p></div><div><p class="eyebrow">RIGHT NOW</p><p>{site.availability}</p></div>{site.socials.length>0&&<div><p class="eyebrow">ELSEWHERE</p>{site.socials.map(link=><a class="text-link" href={url(link.url)}>{link.label} ↗</a>)}</div>}</div></section>
+</BaseLayout>

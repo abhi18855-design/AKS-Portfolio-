@@ -1,0 +1,25 @@
+---
+import {youtubeId} from '../utils/youtube';
+import {media} from '../utils/media';
+interface Props {youtube:string; video?:string; poster:string; title:string;}
+const {youtube,video,poster,title}=Astro.props;const id=youtubeId(youtube);
+---
+{!video && id && <section class="project-block"><div class="section-heading"><h2>The film</h2><span class="muted">Press play. Take a moment.</span></div>
+  <div class="video-embed" data-youtube={id} data-title={title}>
+    <button class="video-trigger" aria-label={`Play ${title} on YouTube`}><img src={media(poster)} alt="" loading="lazy" width="1600" height="900"/><span class="play-icon" aria-hidden="true">▶</span><span class="video-caption">Watch on YouTube</span></button>
+  </div>
+  <p class="media-note">The player connects to YouTube only when you press play. <a href={`https://www.youtube.com/watch?v=${id}`} target="_blank" rel="noreferrer">Open on YouTube ↗</a></p>
+</section>}
+{video&&<section class="project-block"><div class="section-heading"><h2>The film</h2></div><video controls playsinline preload="none" poster={media(poster)} style="width:100%;aspect-ratio:16/9;background:#111"><source src={media(video)}/><p>Your browser cannot play this video. <a href={media(video)}>Open video</a></p></video></section>}
+<script>
+  document.querySelectorAll<HTMLElement>('.video-embed').forEach(container=>{
+    container.querySelector('button')?.addEventListener('click',()=>{
+      const frame=document.createElement('iframe');
+      frame.src=`https://www.youtube-nocookie.com/embed/${container.dataset.youtube}?autoplay=1&rel=0`;
+      frame.title=container.dataset.title||'Project film';
+      frame.allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
+      frame.allowFullscreen=true;frame.referrerPolicy='strict-origin-when-cross-origin';
+      container.replaceChildren(frame);frame.focus();
+    },{once:true});
+  });
+</script>

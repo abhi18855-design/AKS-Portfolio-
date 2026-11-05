@@ -1,0 +1,26 @@
+{
+  "name": "cinematic-creative-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "check": "astro check",
+    "test": "node --test tests/*.test.ts",
+    "build": "node scripts/editor-source.mjs && astro check && astro build && node scripts/check-output.mjs",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/markdown-remark": "7.3.5",
+    "astro": "7.4.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.12",
+    "@types/node": "^24.19.2",
+    "typescript": "^6.0.3",
+    "yaml": "2.9.1"
+  }
+}

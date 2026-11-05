@@ -1,0 +1,8 @@
+---
+import {media,url} from '../utils/media';
+interface Props {tracks:{title:string;file?:string;description?:string;cover?:string;external?:string}[];}
+const tracks=Astro.props.tracks.filter(t=>t.file||t.external);
+---
+{tracks.length>0 && <section class="project-block"><div class="section-heading"><h2>Listen</h2><span class="muted">Sound on. World off.</span></div><div class="audio-list">{tracks.map((track,i)=><article class="audio-track">
+  {track.cover&&<img src={media(track.cover)} alt="" loading="lazy" width="100" height="100"/>}<div class="track-body"><p class="eyebrow">TRACK {String(i+1).padStart(2,'0')}</p><h3>{track.title}</h3>{track.description&&<p>{track.description}</p>}{track.file&&<audio controls preload="none" src={media(track.file)} aria-label={track.title}>Your browser does not support audio. <a href={media(track.file)}>Download this track</a>.</audio>}{track.external&&<a class="text-link" href={url(track.external)}>Listen elsewhere ↗</a>}</div>
+</article>)}</div></section>}

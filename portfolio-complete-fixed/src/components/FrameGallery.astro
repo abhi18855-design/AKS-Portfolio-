@@ -1,0 +1,21 @@
+---
+import {media} from '../utils/media';
+interface Props {frames:{image:string;alt?:string;caption?:string}[];}
+const frames=Astro.props.frames.filter(f=>f.image);
+---
+{frames.length>0 && <section class="project-block"><div class="section-heading"><h2>Selected frames</h2><span class="muted">{String(frames.length).padStart(2,'0')} frames</span></div>
+  <div class="gallery">{frames.map((frame,i)=><figure><a class="gallery-open" href={media(frame.image)} data-caption={frame.caption||''} data-alt={frame.alt||`Project frame ${i+1}`} aria-label={`Enlarge ${frame.alt||`frame ${i+1}`}`}><img src={media(frame.image)} alt={frame.alt||`Project frame ${i+1}`} loading="lazy"/></a>{frame.caption&&<figcaption><span>{String(i+1).padStart(2,'0')}</span>{frame.caption}</figcaption>}</figure>)}</div>
+  <dialog class="lightbox" aria-label="Expanded project frame"><button class="lightbox-close" autofocus aria-label="Close expanded image">Close ×</button><img src="" alt=""/><p></p></dialog>
+</section>}
+<script>
+  const dialog=document.querySelector<HTMLDialogElement>('.lightbox');
+  if(dialog){
+    const close=()=>dialog.close();
+    dialog.querySelector('button')?.addEventListener('click',close);
+    dialog.addEventListener('click',e=>{if(e.target===dialog)close();});
+    document.querySelectorAll<HTMLAnchorElement>('.gallery-open').forEach(link=>link.addEventListener('click',e=>{
+      e.preventDefault();const img=dialog.querySelector('img')!;img.src=link.href;img.alt=link.dataset.alt||'';
+      dialog.querySelector('p')!.textContent=link.dataset.caption||'';dialog.showModal();
+    }));
+  }
+</script>
