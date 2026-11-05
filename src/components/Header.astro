@@ -1,0 +1,10 @@
+---
+import {site} from '../utils/settings';
+import {url} from '../utils/media';
+const items=[['Home','/'],['Work','/work/'],['About','/about/'],['Contact','/contact/']];
+---
+<header class="site-header">
+  <a class="wordmark" href={url('/')} aria-label={`${site.name} — home`}><span class="brand-mark" aria-hidden="true">Ⅱ</span>{site.wordmark}<span class="wordmark-dot">.</span></a>
+  <nav aria-label="Main navigation">{items.map(([label,path])=><a href={url(path)} aria-current={Astro.url.pathname===url(path)?'page':undefined}>{label}</a>)}</nav>
+  <a class="header-cta" href={url('/contact/')}>Let’s talk <span aria-hidden="true">↗</span></a>
+</header>

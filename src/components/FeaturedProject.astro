@@ -1,0 +1,18 @@
+---
+import type {CollectionEntry} from 'astro:content';
+import {site} from '../utils/settings';
+import {media,url} from '../utils/media';
+interface Props {project:CollectionEntry<'projects'>; category:string;}
+const {project,category}=Astro.props;const p=project.data;
+---
+<section class="featured-hero" aria-labelledby="featured-title">
+  <img class="hero-art" src={media(p.hero||p.cover)} alt={p.coverAlt||p.title} width="1600" height="1000" fetchpriority="high"/>
+  <div class="hero-shade"></div>
+  <div class="hero-content shell"><p class="eyebrow"><span class="red-dash"></span> In the spotlight <span class="hero-label">{p.demo?'DEMONSTRATION':'SELECTED WORK'}</span></p>
+    <h1 id="featured-title">{site.heroHeadline||p.title}<span class="wordmark-dot">.</span></h1>
+    <p class="hero-meta">{category}<span>•</span>{p.year}<span>•</span>{site.professionalTitle||p.role}</p>
+    <p class="hero-description">{site.heroDescription||p.description}</p>
+    <div class="hero-actions"><a class="button primary" href={url(`/projects/${p.slug}/`)}><span aria-hidden="true">▷</span> {site.ctaText||'Explore project'}</a><a class="button secondary" href={url('/work/')}>Browse the archive <span aria-hidden="true">↗</span></a></div>
+  </div>
+  <div class="hero-bottom shell"><span>AN INDEPENDENT CREATIVE ARCHIVE</span><a href="#collection">Scroll to explore <span aria-hidden="true">↓</span></a></div>
+</section>

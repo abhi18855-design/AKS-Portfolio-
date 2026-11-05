@@ -1,0 +1,16 @@
+---
+import type {CollectionEntry} from 'astro:content';
+import {media,url} from '../utils/media';
+interface Props { project:CollectionEntry<'projects'>; category?:string; }
+const {project, category=project.data.category}=Astro.props;
+const p=project.data;
+---
+<article class="project-card" data-category={p.category} data-year={p.year} data-order={p.order} data-title={p.title}>
+  <a href={url(`/projects/${p.slug}/`)} aria-label={`View ${p.title}`}>
+    <div class="card-image"><img src={media(p.cover)} alt={p.coverAlt||p.title} loading="lazy" width="800" height="500"/>
+      <span class="card-category">{category}</span><span class="card-open" aria-hidden="true">↗</span>
+      {p.demo && <span class="demo-label">Demo project</span>}
+    </div>
+    <div class="card-caption"><div><h3>{p.title}</h3><p>{p.role||category}</p></div><span class="card-year">{p.year}</span></div>
+  </a>
+</article>

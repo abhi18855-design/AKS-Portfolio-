@@ -1,0 +1,9 @@
+---
+import {site} from '../utils/settings';
+import {url} from '../utils/media';
+---
+<footer class="site-footer shell">
+  <div><a class="footer-name" href={url('/')}>{site.name}<span class="wordmark-dot">.</span></a><p>{site.footerNote}</p></div>
+  <div class="footer-links"><a href={`mailto:${site.email}`}>Email ↗</a>{site.socials.map(link=><a href={url(link.url)}>{link.label} ↗</a>)}</div>
+  <small>© {new Date().getFullYear()} {site.name}</small>
+</footer>

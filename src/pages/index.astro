@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FeaturedProject from '../components/FeaturedProject.astro';
+import ProjectRow from '../components/ProjectRow.astro';
+import {library} from '../utils/projects';
+import {site} from '../utils/settings';
+import {url} from '../utils/media';
+const {projects,categories,featured}=await library();
+---
+<BaseLayout>
+  {featured?<FeaturedProject project={featured} category={categories.find(c=>c.data.slug===featured.data.category)?.data.name||''}/>:<section class="empty-hero shell"><p class="eyebrow">THE CREATIVE ARCHIVE</p><h1>Good things<br/>are taking shape<span class="wordmark-dot">.</span></h1><p>New work will appear here soon.</p><a class="button primary" href={url('/contact/')}>Get in touch ↗</a></section>}
+  <div id="collection" class="collection-intro shell"><p>{site.introduction}</p><span>{String(projects.length).padStart(2,'0')} PROJECTS & COUNTING</span></div>
+  <ProjectRow title="Selected work" subtitle="A few places to begin." projects={projects.filter(p=>p.data.featured)} categories={categories}/>
+  {categories.map(category=><ProjectRow title={category.data.name} subtitle={category.data.description} projects={projects.filter(p=>p.data.category===category.data.slug)} categories={categories} category={category.data.slug}/>)}
+  <section class="closing-note shell"><p class="eyebrow">ALWAYS IN THE MAKING</p><h2>There’s more to the story.</h2><a class="text-link" href={url('/about/')}>Meet the person behind the work <span aria-hidden="true">↗</span></a></section>
+</BaseLayout>

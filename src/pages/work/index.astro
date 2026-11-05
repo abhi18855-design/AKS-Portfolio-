@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import {library} from '../../utils/projects';
+const {projects,categories}=await library();
+---
+<BaseLayout title="Work" description="Explore the complete creative archive, across films, photography, music, and design.">
+  <div class="page-top shell"><p class="eyebrow">THE COMPLETE COLLECTION</p><h1>The archive<span class="wordmark-dot">.</span></h1><p>A growing collection. A continuing conversation.</p></div>
+  <section class="work-section shell" aria-label="Project archive">
+    <div class="archive-controls"><div class="filter-group" role="group" aria-label="Filter projects by category"><button class="filter active" data-filter="all" aria-pressed="true">All work <span>{projects.length}</span></button>{categories.filter(c=>projects.some(p=>p.data.category===c.data.slug)).map(c=><button class="filter" data-filter={c.data.slug} aria-pressed="false">{c.data.name}</button>)}</div><label class="sort-label">Sort by <select id="sort"><option value="curated">Curated order</option><option value="newest">Newest first</option><option value="oldest">Oldest first</option></select></label></div>
+    <p class="result-count" aria-live="polite">{projects.length} {projects.length===1?'project':'projects'}</p>
+    <div class="work-grid">{projects.map(project=><ProjectCard project={project} category={categories.find(c=>c.data.slug===project.data.category)?.data.name}/>)}</div>
+    <p class="empty-state" hidden={projects.length>0}>No projects here yet. Check back soon.</p>
+  </section>
+</BaseLayout>
+<script>
+  const grid=document.querySelector<HTMLElement>('.work-grid')!;
+  const cards=Array.from(grid.querySelectorAll<HTMLElement>('.project-card'));
+  const filters=Array.from(document.querySelectorAll<HTMLButtonElement>('[data-filter]'));
+  const sort=document.querySelector<HTMLSelectElement>('#sort')!;
+  let active=new URLSearchParams(location.search).get('category')||'all';
+  if(!filters.some(b=>b.dataset.filter===active))active='all';
+  const update=()=>{
+    filters.forEach(button=>{const selected=button.dataset.filter===active;button.classList.toggle('active',selected);button.setAttribute('aria-pressed',String(selected));});
+    const sorted=[...cards].sort((a,b)=>sort.value==='newest'?Number(b.dataset.year)-Number(a.dataset.year):sort.value==='oldest'?Number(a.dataset.year)-Number(b.dataset.year):Number(a.dataset.order)-Number(b.dataset.order)||Number(b.dataset.year)-Number(a.dataset.year)||(a.dataset.title||'').localeCompare(b.dataset.title||''));
+    let count=0; sorted.forEach(card=>{card.hidden=active!=='all'&&card.dataset.category!==active;if(!card.hidden)count++;grid.appendChild(card);});
+    document.querySelector('.result-count')!.textContent=`${count} ${count===1?'project':'projects'}`;
+    document.querySelector<HTMLElement>('.empty-state')!.hidden=count>0;
+  };
+  filters.forEach(button=>button.addEventListener('click',()=>{active=button.dataset.filter!;const next=new URL(location.href);if(active==='all')next.searchParams.delete('category');else next.searchParams.set('category',active);history.replaceState(null,'',next);update();}));
+  sort.addEventListener('change',update);update();
+</script>

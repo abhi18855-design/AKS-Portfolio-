@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {about,site} from '../utils/settings';
+import {media,url} from '../utils/media';
+---
+<BaseLayout title="About" description={about.introduction||site.description}>
+  <div class="page-top shell"><p class="eyebrow">BEHIND THE WORK</p><h1>{about.title}</h1><p>{about.introduction}</p></div>
+  <section class="about-grid shell"><div class="portrait">{about.portrait?<img src={media(about.portrait)} alt={about.portraitAlt||site.name} width="700" height="850"/>:<div class="portrait-placeholder"><span aria-hidden="true">Ⅱ</span><p>Your portrait goes here</p></div>}</div><div class="about-copy"><p class="eyebrow">{site.name}</p><h2>A little about me.</h2><p>{about.biography}</p>{about.background&&<p>{about.background}</p>}{about.philosophy&&<><h3>The way I see it</h3><p>{about.philosophy}</p></>}{about.disciplines.length>0&&<ul class="discipline-list">{about.disciplines.map(d=><li>{d}</li>)}</ul>}<div class="about-links">{about.resume&&<a class="text-link" href={url(about.resume)}>Download résumé ↗</a>}{about.links.map(link=><a class="text-link" href={url(link.url)}>{link.label} ↗</a>)}</div><a class="button primary" href={url('/contact/')}>Let’s make something ↗</a></div></section>
+  {about.services.length>0&&<section class="project-block shell"><div class="section-heading"><h2>Services</h2></div><div class="about-copy">{about.services.map(service=><div><h3>{service.title}</h3><p>{service.description}</p></div>)}</div></section>}
+</BaseLayout>
